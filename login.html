@@ -1,0 +1,65 @@
+
+<html lang="es">
+  <head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="https://ionicons.com/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="css/revolution.css"/>
+    <link rel="stylesheet" href="css/owl.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="login-container">
+        <div class="card">
+          <div class="content"><img class="img-responsive" src="img/solo.png" alt="" style="width: 300px;"/>
+            <div class="title">
+              <h1>Iniciar sesion</h1>
+            </div>
+            <div class="btn btn-md btn-primary-light" style="margin-right:0">Iniciar con google</div>
+            <div class="separator">OR</div>
+            <div class="form-input">
+              <label>Email</label>
+              <input type="text"/>
+            </div>
+            <div class="form-input m-b-20">
+              <label>Password</label>
+              <input type="text"/>
+            </div>
+            <div class="btn-action"><a class="mr-auto" href="#">Olvido su contraseña</a>
+              <div class="btn btn-md btn-primary-light" style="margin-right:0">Iniciar</div>
+            </div>
+            <div class="separator m-b-20">OR</div>
+            <div class="btn btn-md btn-danger-border" style="margin-right:0">Registrar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/js/js/jquery.js"></script>
+  <!--script(src="js/Smooth.js")-->
+  <script src="js/jquery.easeScroll.js"></script>
+  <script src="js/revolucion-slider/revolucion.js"></script>
+  <script src="js/owl.js"></script>
+  <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmMjx1Ptkb3sEtV6MS7A5Rma7BdoGQl5o&amp;callback=initMap"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function initMap() {
+    var uluru = {lat: 9.97059, lng: -84.08748};
+    var map = new google.maps.Map(document.getElementById('map'), {
+    center: uluru,
+    zoom: 17,
+    styles: [{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"},{"hue":"#ff0000"}]}],
+    maxZoom: 20,
+    minZoom: 0,
+    mapTypeId: 'roadmap',
+    });
+    var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+    });
+    }
+  </script>
+</html>
