@@ -101,3 +101,15 @@ if ($('.main-slider .tp-banner').length) {
     });
 
 }
+
+
+var mn = $(".main-header");
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 300) {
+        mn.addClass("fixed");
+    } else {
+        mn.removeClass("fixed");
+    }
+});
