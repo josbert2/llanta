@@ -107,9 +107,16 @@ var mn = $(".main-header");
 
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
-        mn.addClass("fixed");
+    if ($(this).scrollTop() > 250 && $(this).scrollTop() < 300) {
+        mn.addClass("ty");
     } else {
-        mn.removeClass("fixed");
+        if ($(this).scrollTop() > 300) {
+            mn.addClass("fixed");
+            mn.addClass("no_ty");
+        } else {
+            mn.removeClass("fixed");
+            mn.removeClass("ty");
+            mn.removeClass("no_ty");
+        }
     }
 });

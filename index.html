@@ -11,33 +11,46 @@
   </head>
   <body class="app-js"> </body>
   <div class="page-wrapper">
-    <div class="main-header bg-color">
-      <div class="header-upper">
-        <div class="left-content">
-          <div class="logo"></div>
-        </div>
-        <div class="right-content">
-          <div class="d-flex flex-column">
-            <div class="info-nav">
-              <ul class="line-nav d-flex justify-content-start align-items-center">
-                <li class="d-flex align-items-center"><i class="ion ion-logo-whatsapp"></i><a href="#">0123243568p</a></li>
-                <li class="d-flex align-items-center"><i class="ion ion-md-locate"></i><a href="#">Ubicaion del sitio</a></li>
-                <li class="ml-auto"><a class="btn btn-md btn-login" href="#">Login</a></li>
-              </ul>
-            </div>
-            <div class="nav-menu">
-              <ul>
-                <li><a href="#">Quienes somos</a></li>
-                <li><a href="#">Distribuidores Autorizados</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Ubicanos</a></li>
-              </ul>
-            </div>
+    <div class="main-header">
+      <div class="sub-nav">
+        <div class="container">
+          <div class="social-icon">
+            <ul>
+              <li><i class="ion ion-logo-facebook"></i><a href="#">SoloLLantas</a></li>
+              <li><i class="ion ion-logo-instagram"></i><span>@solollantasSRL</span></li>
+            </ul>
+          </div>
+          <div class="info-nav ml-auto">
+            <ul class="d-flex">
+              <li><i class="ion ion-logo-whatsapp"></i><span> 6100 – 9497</span></li>
+            </ul>
+            <ul class="d-flex">
+              <li class="shop"><a class="burger shop" href="#"><i class="ion ion-md-cart"></i></a></li>
+              <li><a href="#">Login </a></li>
+            </ul>
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="site-logo"><a href="#"><img src="img/solo_opt.png" alt=""/></a></div>
+        <div class="links-nav ml-auto">
+          <ul id="main-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#quienes">Quiénes somos</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#ubicanos">Ubicanos</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <nav class="menu"><a class="close-btn" href="#"><i class="ion ion-md-close"></i></a>
+      <div class="menu__brand" style="background-image: url(img/pncs-bg.jpg)"><a href="#img">
+          <div class="logo-mm" style="background-image: url(img/solo.png);background-size:contain"></div></a></div>
+      <ul class="menu__list">
+        <li class="menu__item active"><a class="menu__link" href="#home">PROXIMAMENTE</a></li>
+      </ul>
+    </nav>
     <section class="main-slider" data-start-height="780" data-slide-overlay="yes">
       <div class="tp-banner-container">
         <div class="tp-banner">
@@ -53,7 +66,7 @@
         </div>
       </div>
     </section>
-    <section class="whatis">
+    <section class="whatis" id="quienes">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -61,13 +74,13 @@
             <hr class="hr-title-03"/>
           </div>
           <div class="col-md-6">
-            <h5>SoloLlantas</h5><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dignissimos quidem odio, corrupti nemo molestiae amet. Nostrum quibusdam necessitatibus ullam, minus aliquam, excepturi sunt reiciendis enim asperiores possimus similique dicta.</span><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dignissimos quidem odio, corrupti nemo molestiae amet. Nostrum quibusdam necessitatibus ullam, minus aliquam, excepturi sunt reiciendis enim asperiores possimus similique dicta.</span><a class="btn btn-readmore btn-md m-t-30" href="#">Leer mas</a>
+            <h5>SoloLlantas</h5><span> Somos una empresa con tres años de trayectoria en Costa Rica. Fundada en 2015. Distribuidores autorizados Pirelli principalmente; así como marcas americanas tales como Hercules Tire y Ironman, otras marcas como Michelin, Khumo, Uniroyal. Nos caracterizamos por ofrecer modelos y medidas High performance En SoloLLantas, además, somos mayoristas. Trabajamos para ampliar nuestra propuesta comercial, de la mano de aliados comerciales, identificados en el mercado como distribuidores autorizados Solo Llantas, quienes ofrecen también toda la línea de productos que importa el grupo Solo Llantas. Conoce los distribuidores autorizados Solo LLantas (que le den click y los lleve a distribuidores autorizados). </span><a class="btn btn-readmore btn-md m-t-30" href="#">Leer mas</a>
           </div>
           <div class="col-md-6 d-flex justify-content-center align-items-center"><img class="img-responsive" src="http://reisen.themerex.net/wp-content/uploads/2016/09/about_x2.jpg" alt=""/></div>
         </div>
       </div>
     </section>
-    <section class="s-llanta">
+    <section class="s-llanta" id="productos">
       <h2 class="main-title">Nuestros productos</h2>
       <hr class="hr-title-03"/>
       <div class="container">
@@ -208,7 +221,7 @@
         </div>
       </div>
     </section>
-    <section class="info">
+    <section class="info" id="servicios">
       <div class="row">
         <div class="colunm" style="background-image: url(img/bg-3.jpg)">
           <div class="border-style">
@@ -260,7 +273,80 @@
         </div>
       </div>
     </section>
-    <section class="findme">
+    <section class="services" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="main-title">Servicios</h2>
+            <hr class="hr-title-03"/>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card">
+              <div class="img-services" style="background-image: url(https://image.flaticon.com/icons/svg/976/976095.svg)"></div>
+              <div class="content-services">
+                <h2>Balanceo</h2>
+                <div class="content">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card">
+              <div class="img-services" style="background-image: url(https://image.flaticon.com/icons/svg/133/133468.svg)"></div>
+              <div class="content-services">
+                <h2>Cambio de aceite</h2>
+                <div class="content">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card">
+              <div class="img-services">
+                <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/841/841077.svg)"></div>
+              </div>
+              <div class="content-services">
+                <h2>Frenos</h2>
+                <div class="content">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <div class="services-card">
+                <div class="img-services">
+                  <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/814/814400.svg)"></div>
+                </div>
+                <div class="content-services">
+                  <h2>Monturas</h2>
+                  <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="services-card">
+                <div class="img-services">
+                  <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/976/976071.svg)"></div>
+                </div>
+                <div class="content-services">
+                  <h2>Venta de llantas</h2>
+                  <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="findme" id="ubicanos">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -305,21 +391,22 @@
             <div class="contact-method"><span> 
                 <div class="icon"><i class="ion ion-md-compass"></i></div>
                 <h3 style="    margin: 0;">Direccion</h3></span>
-              <h2>50mts Este del Cementerio de santo Domingo de Heredia.</h2>
+              <p>Solo Llantas – Santo Domingo: 50 mts. Este del Cementerio de Santo Domingo de Heredia.</p>
+              <p>Teléfono: 2244 - 9848</p>
+              <p>WhatApp: 6100 – 9497</p>
+              <p>Horario: Lunes a Viernes 8:00 – 5:00pm / sábados 8:00 – 3:00pm</p>
+              <p>Servicios: Montura y balanceo</p>
             </div>
           </section>
           <section>
             <div class="contact-method"><span> 
                 <div class="icon"><i class="ion ion-logo-whatsapp"></i></div>
                 <h3 style="    margin: 0;">Direccion</h3></span>
-              <h2>(506) 6100 – 9497</h2>
-            </div>
-          </section>
-          <section>
-            <div class="contact-method"><span> 
-                <div class="icon"><i class="ion ion-logo-whatsapp"></i></div>
-                <h3 style="    margin: 0;">Direccion</h3></span>
-              <h2> 3.2 Santa Ana Lindora, 200 mts Sur del Complejo deportivo Furati.</h2>
+              <p>Solo Llantas – Santa Ana: 200 mts norte del Complejo deportivo Furati. Edificio esquinero a mano derecha, cuarto local.</p>
+              <p>Teléfono: 4033 – 3623</p>
+              <p>WhatApp: pendiente que te envíe el número.</p>
+              <p>Horario: Lunes a viernes 9:00 – 7:00pm /sábado 8:00 – 3:00pm</p>
+              <p>Servicios: montura / balanceo / cambio de aceite y frenos. </p>
             </div>
           </section>
         </section>
