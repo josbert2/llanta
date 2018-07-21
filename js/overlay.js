@@ -1,14 +1,14 @@
 $(function() {
     $('.burger').click(function() {
 
-        $(".fixed").css({
+        $(".fixed_search").css({
             "top": "40px"
         });
 
 
     })
     $('.close-searcher').click(function() {
-        $(".fixed").css({
+        $(".fixed_search").css({
             "top": ""
         });
 

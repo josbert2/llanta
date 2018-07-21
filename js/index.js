@@ -1,7 +1,19 @@
 'use strict';
 
 $("html").easeScroll();
+$('.whatis a').on('click', function() {
 
+    var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 48;
+    console.dir(scrollPoint);
+
+    $('body,html').animate({
+        scrollTop: scrollPoint - 70
+    }, 500);
+
+    return false;
+
+});
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 30,

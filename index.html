@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="css/revolution.css"/>
     <link rel="stylesheet" href="css/owl.css"/>
     <title>Document</title>
+    <div class="fixed_search top-default search-bar card-search big-padding z-depth-3 custom-bar"><span class="be-small close-searcher circle red white-text" style="padding:9px 13px;">x</span>
+      <h3 class="be-medium blue-text normal-line-height"><i class="fa fa-search"></i>    Buscador</h3>
+      <form id="search_form" accept-charset="UTF-8" method="POST" action="" name="search_form">
+        <div class="input-field">
+          <input id="search" type="text" name="search" autocomplete="off" remote="true" placeholder="Ingrese un dato"/>
+        </div>
+      </form>
+      <div class="text-center top-space" id="search-result"></div>
+    </div>
   </head>
   <body class="app-js"> </body>
   <div class="page-wrapper">
@@ -16,18 +25,15 @@
         <div class="container">
           <div class="social-icon">
             <ul>
-              <li><i class="ion ion-logo-facebook"></i><a href="#">SoloLLantas</a></li>
+              <li><i class="ion ion-logo-facebook"></i><a href="https://www.facebook.com/SoloLlantasSRL/">SoloLLantas</a></li>
               <li><i class="ion ion-logo-instagram"></i><span>@solollantasSRL</span></li>
             </ul>
           </div>
           <div class="info-nav ml-auto">
             <ul class="d-flex">
-              <li><i class="ion ion-logo-whatsapp"></i><span> 6100 – 9497</span></li>
-            </ul>
-            <ul class="d-flex">
               <li class="shop"><a class="burger shop" href="#"><i class="ion ion-md-search"></i></a></li>
-              <li class="shop"><a class="burger-md shop" href="#"><i class="ion ion-md-cart"></i></a></li>
-              <li><a href="#">Login</a></li>
+              <li class="shop"><a class="burger-md shop" href="shop.html"><i class="ion ion-md-cart"></i></a></li>
+              <li><a href="login.html">Login</a></li>
             </ul>
           </div>
         </div>
@@ -44,16 +50,6 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="fixed top-default search-bar card-search big-padding z-depth-3 custom-bar"><span class="be-small close-searcher circle red white-text" style="padding:9px 13px;">x</span>
-      <h3 class="be-medium blue-text normal-line-height"><i class="fa fa-search"></i>    Buscador</h3>
-      <p><strong>Nota: </strong> </p>
-      <form id="search_form" accept-charset="UTF-8" method="POST" action="" name="search_form">
-        <div class="input-field">
-          <input id="search" type="text" name="search" autocomplete="off" remote="true" placeholder="Ingrese un dato"/>
-        </div>
-      </form>
-      <div class="text-center top-space" id="search-result"></div>
     </div>
     <nav class="menu"><a class="close-btn" href="#"><i class="ion ion-md-close"></i></a>
       <div class="menu__brand" style="background-image: url(img/pncs-bg.jpg)"><a href="#img">
@@ -91,9 +87,7 @@
             <h2 class="main-title">Quienes somos</h2>
             <hr class="hr-title-03"/>
           </div>
-          <div class="col-md-6">
-            <h5>SoloLlantas</h5><span> Somos una empresa con tres años de trayectoria en Costa Rica. Fundada en 2015. Distribuidores autorizados Pirelli principalmente; así como marcas americanas tales como Hercules Tire y Ironman, otras marcas como Michelin, Khumo, Uniroyal. Nos caracterizamos por ofrecer modelos y medidas High performance En SoloLLantas, además, somos mayoristas. Trabajamos para ampliar nuestra propuesta comercial, de la mano de aliados comerciales, identificados en el mercado como distribuidores autorizados Solo Llantas, quienes ofrecen también toda la línea de productos que importa el grupo Solo Llantas. Conoce los distribuidores autorizados Solo LLantas (que le den click y los lleve a distribuidores autorizados). </span><a class="btn btn-readmore btn-md m-t-30" href="#">Leer mas</a>
-          </div>
+          <div class="col-md-6"><span class="m-b-10">Somos una empresa fundada en 2015, caracterizada por ofrecer modelos y medidas Highperformance entre otras.</span><span class="m-b-10">En Solo Llantas somos distribuidores autorizados Pirelli, pero además, comercializamosmarcas americanas como Hercules Tire, Ironman y otras marcas como Michelin, Khumo, Uniroyal, entre otras.</span><span class="m-b-10">Bajo la premisa de ampliar nuestra propuesta comercial y llegar a más rincones de CostaRica, estamos desarrollando alianzas estratégicas con diversos negocios, donde procuramos unir esfuerzos para ofrecer más y mejores servicios a los Ticos. De esta manera vamos dejando nuestra huella, identificando locales como “Distribuidores autorizados Solo Llantas”.</span><span class="m-b-10">Para conocer los <a href="#" style="    text-decoration: underline;" data-scroll="marcas">distribuidores autorizados</a> Solo LLantas</span><a class="btn btn-readmore btn-md m-t-30" href="#">Leer mas</a></div>
           <div class="col-md-6 d-flex justify-content-center align-items-center"><img class="img-responsive" src="http://reisen.themerex.net/wp-content/uploads/2016/09/about_x2.jpg" alt=""/></div>
         </div>
       </div>
@@ -140,7 +134,7 @@
             <div class="item">
               <div class="item-llanta">
                 <div class="llanta" style="background-image: url('img/tired.png')"></div>
-                <div class="shop-cart"><i class="ion ion-md-cart"></i></div>
+                <div class="shop-cart"><a href="view-product.html"><i class="ion ion-md-cart"></i></a></div>
                 <div class="content-llanta">
                   <h4>Woo Album #41</h4>
                   <h5>$: 200</h5>
@@ -239,64 +233,81 @@
         </div>
       </div>
     </section>
-    <section class="info" id="servicios">
-      <div class="row">
-        <div class="colunm" style="background-image: url(img/bg-3.jpg)">
-          <div class="border-style">
-            <div class="content">
-              <h2>The best ripple</h2>
-              <h4> dolorem perferendis rerum at quae, dolores maiores, accusamus nemo. Error sapiente expedita, laborum cum quibusdam, vitae.</h4><a class="btn btn-info btn-md" href="#">Leer mas</a>
-            </div>
+    <!--section.info#servicios
+    .row
+      .colunm(style="background-image: url(img/bg-3.jpg)")
+        .border-style
+          .content
+            h2 The best ripple
+            h4  dolorem perferendis rerum at quae, dolores maiores, accusamus nemo. Error sapiente expedita, laborum cum quibusdam, vitae.
+            a(href="#").btn.btn-info.btn-md Leer mas
+      .colunm(style="background-image: url(img/PZero.jpg)")
+        .border-style
+          .content
+            h2 The best ripple
+            h4 olestiae obcaecati harum illum velit, modi non ipsam laborum consequatur tempore, numquam dolorem odio cupiditate accusamus blanditiis.
+            a(href="#").btn.btn-info.btn-md Leer mas
+      .colunm(style="background-image: url(img/pncs-bg.jpg)")
+        .border-style
+          .content
+            h2 The best ripple
+            h4  dolorem perferendis rerum at quae, dolores maiores, accusamus nemo. Error sapiente expedita, laborum cum quibusdam, vitae.
+            a(href="#").btn.btn-info.btn-md Leer mas
+      .colunm(style="background-image: url(img/Pzero-Yellow.jpg)")
+        .border-style
+          .content
+            h2 The best ripple
+            h4 olestiae obcaecati harum illum velit, modi non ipsam laborum consequatur tempore, numquam dolorem odio cupiditate accusamus blanditiis.
+            a(href="#").btn.btn-info.btn-md Leer mas
+      .colunm(style="background-image: url(img/bg-3.jpg)")
+        .border-style
+          .content
+            h2 The best ripple
+            h4  dolorem perferendis rerum at quae, dolores maiores, accusamus nemo. Error sapiente expedita, laborum cum quibusdam, vitae.
+            a(href="#").btn.btn-info.btn-md Leer mas
+      .colunm(style="background-image: url(img/PZero.jpg)")
+        .border-style
+          .content
+            h2 The best ripple
+            h4 olestiae obcaecati harum illum velit, modi non ipsam laborum consequatur tempore, numquam dolorem odio cupiditate accusamus blanditiis.
+            a(href="#").btn.btn-info.btn-md Leer mas
+    -->
+    <section class="allied" id="marcas" data-anchor="marcas">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"><h2 class="main-title text-white">Distribuidores Autorizados</h2></div>
+          <div class="col-md-4">
+            <div class="img-allied" style="background-image: url(img/roagui.png)"></div>
+            <h4 class="has-text-centered text-white w400">Dirección: Costado Este del Inbio parque Heredia</h4>
+            <h5 class="has-text-centered text-white w400">Teléfono: 2244 1595</h5>
           </div>
-        </div>
-        <div class="colunm" style="background-image: url(img/PZero.jpg)">
-          <div class="border-style">
-            <div class="content">
-              <h2>The best ripple</h2>
-              <h4>olestiae obcaecati harum illum velit, modi non ipsam laborum consequatur tempore, numquam dolorem odio cupiditate accusamus blanditiis.</h4><a class="btn btn-info btn-md" href="#">Leer mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="colunm" style="background-image: url(img/pncs-bg.jpg)">
-          <div class="border-style">
-            <div class="content">
-              <h2>The best ripple</h2>
-              <h4> dolorem perferendis rerum at quae, dolores maiores, accusamus nemo. Error sapiente expedita, laborum cum quibusdam, vitae.</h4><a class="btn btn-info btn-md" href="#">Leer mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="colunm" style="background-image: url(img/Pzero-Yellow.jpg)">
-          <div class="border-style">
-            <div class="content">
-              <h2>The best ripple</h2>
-              <h4>olestiae obcaecati harum illum velit, modi non ipsam laborum consequatur tempore, numquam dolorem odio cupiditate accusamus blanditiis.</h4><a class="btn btn-info btn-md" href="#">Leer mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="colunm" style="background-image: url(img/bg-3.jpg)">
-          <div class="border-style">
-            <div class="content">
-              <h2>The best ripple</h2>
-              <h4> dolorem perferendis rerum at quae, dolores maiores, accusamus nemo. Error sapiente expedita, laborum cum quibusdam, vitae.</h4><a class="btn btn-info btn-md" href="#">Leer mas</a>
-            </div>
-          </div>
-        </div>
-        <div class="colunm" style="background-image: url(img/PZero.jpg)">
-          <div class="border-style">
-            <div class="content">
-              <h2>The best ripple</h2>
-              <h4>olestiae obcaecati harum illum velit, modi non ipsam laborum consequatur tempore, numquam dolorem odio cupiditate accusamus blanditiis.</h4><a class="btn btn-info btn-md" href="#">Leer mas</a>
-            </div>
+          <div class="col-md-4">
+            <div class="img-allied" style="background-image: url(img/4linea.jpg)"></div>
+            <h4 class="has-text-centered text-white w400">Dirección: San José – Cinco esquinas</h4>
+            <h5 class="has-text-centered text-white w400">Teléfono: 2221 0816</h5>
           </div>
         </div>
       </div>
     </section>
-    <section class="services" id="services">
+    <section class="services" id="servicios">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h2 class="main-title">Servicios</h2>
             <hr class="hr-title-03"/>
+          </div>
+          <div class="col-md-4">
+            <div class="services-card">
+              <div class="img-services">
+                <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/814/814400.svg)"></div>
+              </div>
+              <div class="content-services">
+                <h2>Monturas</h2>
+                <div class="content">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
             <div class="services-card">
@@ -311,22 +322,11 @@
           </div>
           <div class="col-md-4">
             <div class="services-card">
-              <div class="img-services" style="background-image: url(https://image.flaticon.com/icons/svg/133/133468.svg)"></div>
-              <div class="content-services">
-                <h2>Cambio de aceite</h2>
-                <div class="content">
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="services-card">
               <div class="img-services">
-                <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/841/841077.svg)"></div>
+                <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/976/976071.svg)"></div>
               </div>
               <div class="content-services">
-                <h2>Frenos</h2>
+                <h2>Venta de llantas</h2>
                 <div class="content">
                   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
                 </div>
@@ -336,11 +336,9 @@
           <div class="row justify-content-center">
             <div class="col-md-4">
               <div class="services-card">
-                <div class="img-services">
-                  <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/814/814400.svg)"></div>
-                </div>
+                <div class="img-services" style="background-image: url(https://image.flaticon.com/icons/svg/133/133468.svg)"></div>
                 <div class="content-services">
-                  <h2>Monturas</h2>
+                  <h2>Cambio de aceite</h2>
                   <div class="content">
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
                   </div>
@@ -350,10 +348,10 @@
             <div class="col-md-4">
               <div class="services-card">
                 <div class="img-services">
-                  <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/976/976071.svg)"></div>
+                  <div class="img" style="background-image: url(https://image.flaticon.com/icons/svg/841/841077.svg)"></div>
                 </div>
                 <div class="content-services">
-                  <h2>Venta de llantas</h2>
+                  <h2>Frenos</h2>
                   <div class="content">
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic necessitatibus, aperiam eum quis nisi similique! Mollitia ut ipsa animi tempora obcaecati a similique accusamus dolorum, corrupti eligendi ea, neque.</p>
                   </div>
@@ -391,7 +389,7 @@
                 <input name="name" id="name" type="text"/>
               </div>
               <div class="col-md-6 m-b-30">
-                <label>Name</label>
+                <label>Correo</label>
                 <input name="name" id="name" type="text"/>
               </div>
               <div class="col-md-12">
@@ -409,22 +407,46 @@
             <div class="contact-method"><span> 
                 <div class="icon"><i class="ion ion-md-compass"></i></div>
                 <h3 style="    margin: 0;">Direccion</h3></span>
-              <p>Solo Llantas – Santo Domingo: 50 mts. Este del Cementerio de Santo Domingo de Heredia.</p>
-              <p>Teléfono: 2244 - 9848</p>
-              <p>WhatApp: 6100 – 9497</p>
-              <p>Horario: Lunes a Viernes 8:00 – 5:00pm / sábados 8:00 – 3:00pm</p>
-              <p>Servicios: Montura y balanceo</p>
+              <ul>
+                <li><i class="ion ion-md-map"> </i>
+                  <p>Solo Llantas – Santo Domingo: 50 mts. Este del Cementerio de Santo Domingo de Heredia.</p>
+                </li>
+                <li><i class="ion ion-md-call"> </i>
+                  <p>Teléfono: 2244 - 9848</p>
+                </li>
+                <li><i class="ion ion-md-phone-portrait"></i>
+                  <p>WhatApp: 6100 – 9497</p>
+                </li>
+                <li><i class="ion ion-md-time"></i>
+                  <p>Horario: Lunes a Viernes 8:00 – 5:00pm / sábados 8:00 – 3:00pm</p>
+                </li>
+                <li><i class="ion ion-md-contacts"></i>
+                  <p>Servicios: Montura y balanceo</p>
+                </li>
+              </ul>
             </div>
           </section>
           <section>
             <div class="contact-method"><span> 
                 <div class="icon"><i class="ion ion-logo-whatsapp"></i></div>
                 <h3 style="    margin: 0;">Direccion</h3></span>
-              <p>Solo Llantas – Santa Ana: 200 mts norte del Complejo deportivo Furati. Edificio esquinero a mano derecha, cuarto local.</p>
-              <p>Teléfono: 4033 – 3623</p>
-              <p>WhatApp: pendiente que te envíe el número.</p>
-              <p>Horario: Lunes a viernes 9:00 – 7:00pm /sábado 8:00 – 3:00pm</p>
-              <p>Servicios: montura / balanceo / cambio de aceite y frenos. </p>
+              <ul>
+                <li><i class="ion ion-md-map"> </i>
+                  <p>Solo Llantas – Santa Ana: 200 mts norte del Complejo deportivo Furati. Edificio esquinero a mano derecha, cuarto local.</p>
+                </li>
+                <li><i class="ion ion-md-call"> </i>
+                  <p>Teléfono: 4033-3623</p>
+                </li>
+                <li><i class="ion ion-md-phone-portrait"></i>
+                  <p>WhatApp: 6264-0123</p>
+                </li>
+                <li><i class="ion ion-md-time"></i>
+                  <p>Horario: Lunes a viernes 9:00 – 7:00pm /sábado 8:00 – 3:00pm</p>
+                </li>
+                <li><i class="ion ion-md-contacts"></i>
+                  <p>Servicios: montura / balanceo / cambio de aceite y frenos. </p>
+                </li>
+              </ul>
             </div>
           </section>
         </section>
