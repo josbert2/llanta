@@ -3,7 +3,7 @@
   <head> 
     <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="https://ionicons.com/css/ionicons.min.css"/>
     <link rel="stylesheet" href="css/revolution.css"/>
     <link rel="stylesheet" href="css/owl.css"/>
@@ -44,21 +44,4 @@
   <script src="js/owl.js"></script>
   <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmMjx1Ptkb3sEtV6MS7A5Rma7BdoGQl5o&amp;callback=initMap"></script>
   <script src="js/script.js"></script>
-  <script>
-    function initMap() {
-    var uluru = {lat: 9.97059, lng: -84.08748};
-    var map = new google.maps.Map(document.getElementById('map'), {
-    center: uluru,
-    zoom: 17,
-    styles: [{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"},{"hue":"#ff0000"}]}],
-    maxZoom: 20,
-    minZoom: 0,
-    mapTypeId: 'roadmap',
-    });
-    var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-    });
-    }
-  </script>
 </html>

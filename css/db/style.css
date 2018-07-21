@@ -1,0 +1,49 @@
+
+/*
+    elements
+*/
+body {
+    background-color: #f4f4f4;
+         font-family: 'Open Sans', sans-serif;
+          min-height: 100px;
+}
+
+/*
+    nanobar
+*/
+.nanobar {
+    z-index: 9999;
+     height: 2px;
+      width: 100%;
+        top: 0
+}
+
+.nanobar .bar {
+    transition: height .3s;
+    background: #acacac;
+        height: 100%;
+	 width: 0;
+}
+
+/*
+    custom dropdown menu
+*/
+.dropdown {
+    margin-top: 9px;
+}
+
+.dropdown ul.expand-dropdown li a i.fa {
+    padding-right: 12px;
+}
+
+.dropdown ul.expand-dropdown li {
+    min-width: 160px;
+}
+
+.dropdown ul.expand-dropdown {
+    margin-top: 10px;
+}
+
+.dropdown .employ-toggle.click:hover {
+    background-color: white;
+}
